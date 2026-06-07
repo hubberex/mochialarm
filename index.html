@@ -1,174 +1,181 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Integritetspolicy – Mochi Alarm</title>
+  <title>Mochi Alarm — Privacy Policy & Terms of Service</title>
+  <meta name="description" content="Privacy Policy and Terms of Service for Mochi Alarm by Hubbe Inc." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFF4E6;
+      --card: #FFFFFF;
+      --text: #5A3520;
+      --muted: rgba(90, 53, 32, 0.7);
+      --accent: #E07A3B;
+      --accent2: #FF8FA8;
+      --line: rgba(122, 74, 40, 0.14);
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #FFF8F3;
-      color: #3A2010;
-      padding: 0 16px 60px;
-      max-width: 720px;
-      margin: 0 auto;
-      line-height: 1.7;
-      font-size: 15px;
+      margin: 0;
+      background: linear-gradient(180deg, #FFF1E2 0%, #FFE8D2 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 0 0 60px;
     }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
     header {
-      padding: 40px 0 24px;
-      border-bottom: 2px solid #FFD6B0;
-      margin-bottom: 32px;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-    .logo-icon {
-      width: 48px; height: 48px;
-      background: linear-gradient(135deg, #FF8FA8, #E07A3B);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 26px;
-    }
-    h1 {
-      font-size: 28px;
-      font-weight: 800;
-      color: #2D1B0F;
-    }
-    .meta {
-      font-size: 13px;
-      color: #9A6040;
-      margin-top: 4px;
-    }
-    h2 {
-      font-size: 17px;
-      font-weight: 700;
-      color: #E07A3B;
-      margin: 32px 0 8px;
-    }
-    p { margin-bottom: 10px; }
-    ul {
-      padding-left: 20px;
-      margin-bottom: 10px;
-    }
-    ul li { margin-bottom: 4px; }
-    a { color: #E07A3B; }
-    .highlight {
-      background: #FFF0E4;
-      border-left: 4px solid #FF8FA8;
-      border-radius: 0 8px 8px 0;
-      padding: 14px 16px;
-      margin: 16px 0;
-      font-size: 14px;
-    }
-    footer {
-      margin-top: 48px;
-      padding: 20px 0;
-      border-top: 1px solid #FFD6B0;
-      font-size: 13px;
-      color: #9A6040;
       text-align: center;
+      padding: 48px 20px 24px;
+    }
+    header h1 {
+      font-size: 30px;
+      margin: 0 0 6px;
+      color: var(--text);
+    }
+    header .sub { color: var(--muted); font-size: 14px; font-weight: 600; }
+    nav {
+      display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+      margin: 18px 0 8px;
+    }
+    nav a {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: var(--accent2);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 3px 0 #D86F88;
+    }
+    nav a.alt { background: var(--accent); box-shadow: 0 3px 0 #B45F23; }
+    section.doc {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px 26px;
+      margin: 26px 0;
+      box-shadow: 0 8px 24px rgba(80, 40, 20, 0.07);
+    }
+    section.doc > h2 {
+      font-size: 23px;
+      margin: 0 0 2px;
+      color: var(--text);
+    }
+    .updated { color: var(--muted); font-size: 13px; font-weight: 600; margin-bottom: 18px; }
+    .item { margin: 0 0 18px; }
+    .item h3 {
+      font-size: 16px;
+      color: var(--accent);
+      margin: 0 0 5px;
+    }
+    .item p { margin: 0; font-size: 15px; color: rgba(90, 53, 32, 0.9); }
+    .contact {
+      margin-top: 26px;
+      padding: 16px 18px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    a { color: var(--accent); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 30px;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1320; color: #FFE9D6; }
+      section.doc { background: rgba(255,255,255,0.05); box-shadow: none; }
+      section.doc > h2, .item p { color: #FFE9D6; }
+      .item h3 { color: #FFB6CC; }
+      .updated, .muted, footer { color: rgba(255,233,214,0.6); }
+      .contact { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1); }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>🐱 Mochi Alarm</h1>
+    <div class="sub">Privacy Policy &amp; Terms of Service · by Hubbe Inc.</div>
+    <nav>
+      <a href="#privacy">Privacy Policy</a>
+      <a class="alt" href="#terms">Terms of Service</a>
+    </nav>
+  </header>
 
-<header>
-  <div class="logo">
-    <div class="logo-icon">🐱</div>
-    <div>
-      <h1>Mochi Alarm</h1>
-      <div class="meta">Integritetspolicy</div>
-    </div>
+  <div class="wrap">
+
+    <!-- ============================ PRIVACY ============================ -->
+    <section class="doc" id="privacy">
+      <h2>Privacy Policy</h2>
+      <div class="updated">Last updated: June 7, 2026</div>
+
+      <div class="item"><h3>1. Who We Are</h3><p>Mochi Alarm is developed by Hubbe Inc. (contact: hubbeinc@gmail.com). This Privacy Policy explains how we handle information when you use Mochi Alarm ("the App") on Android. By using the App, you agree to this policy.</p></div>
+
+      <div class="item"><h3>2. Data We Store on Your Device</h3><p>All your personal settings — alarms, ringtone preferences, repeat schedule, dark mode, pet name, streak count, and virtual items (Coins, Biscuits) — are stored locally on your device only. We do not operate servers that collect or store this data. We do not collect your name, email address, phone number, contacts, or precise location.</p></div>
+
+      <div class="item"><h3>3. Device Sensors</h3><p>The App uses your device's accelerometer and gyroscope during the "Walk &amp; Pour" mission to detect steps and tilt. Sensor data is processed entirely on-device in real time and is never recorded, transmitted, or shared with anyone.</p></div>
+
+      <div class="item"><h3>4. Advertising (Google AdMob)</h3><p>The free version of Mochi Alarm displays ads provided by Google AdMob (Google LLC). To serve ads, Google may collect and use your device's Advertising ID (GAID), IP address, and general device information. This data is governed by Google's Privacy Policy (policies.google.com/privacy). You can reset or opt out of personalized ads at any time in your device Settings → Google → Ads → "Delete advertising ID" or "Opt out of Ads Personalization." Upgrading to Mochi Alarm Premium removes all ads. We do not sell your personal information to third parties.</p></div>
+
+      <div class="item"><h3>5. Analytics &amp; Crash Reporting</h3><p>We may receive anonymous, aggregated crash reports and basic usage metrics through Google Play services (e.g., which screens crash). This data cannot identify you individually. You can opt out via Android Settings → Google → Manage your Google Account → Data &amp; Privacy.</p></div>
+
+      <div class="item"><h3>6. Notifications, Alarms &amp; Device Permissions</h3><p>To deliver alarms reliably, the App requests a set of device permissions that operate entirely on your phone and collect, store, or transmit no personal data: Notifications (to show the alarm and wake-up screen); Exact Alarms (so the alarm rings at the precise minute you set); Full-Screen Intent (to display the wake-up mission over your lock screen); Run at Startup / Boot Completed (to re-arm your saved alarms after a restart); and Vibration. With your optional, separate consent, the App may also ask to be excluded from battery optimization ("unrestricted" battery use) so the operating system does not delay or silence your alarm while the phone is idle. This battery exemption is entirely optional, is granted through your device's own system dialog, and can be revoked at any time in Android Settings. None of these permissions are used for advertising, tracking, or data collection.</p></div>
+
+      <div class="item"><h3>7. Children's Privacy</h3><p>Mochi Alarm is rated for general audiences (Everyone) and is not directed to children under 13. We do not knowingly collect personal data from children. AdMob is configured to serve non-personalized ads only where required by law. If you believe a child under 13 is using the App and has submitted data, contact us at hubbeinc@gmail.com and we will take prompt corrective action.</p></div>
+
+      <div class="item"><h3>8. Data Safety Summary (Google Play)</h3><p>Data shared with third parties: Advertising ID may be shared with Google AdMob for ad serving. Data collected by us: None — all app data stays on your device. Security practices: Data is encrypted in transit by Google's ad network. You can request data deletion by uninstalling the App or deleting your Advertising ID in device settings.</p></div>
+
+      <div class="item"><h3>9. Your Rights &amp; Controls</h3><p>You can delete all App data by uninstalling the App. You can opt out of personalized ads via Android device settings. EU/EEA users have rights under GDPR including access, erasure, and data portability — contact us at hubbeinc@gmail.com to exercise these rights. California residents have rights under CCPA; we do not sell personal information.</p></div>
+
+      <div class="item"><h3>10. Security</h3><p>We use industry-standard practices to keep the App secure. All network connections (such as ad requests) use HTTPS encryption. No personal data is stored on our servers. Use a screen lock on your device for additional protection.</p></div>
+
+      <div class="item"><h3>11. Changes to This Policy</h3><p>We may update this Privacy Policy from time to time. Material changes will be communicated with an updated "Last updated" date. Continued use of the App after changes are posted constitutes acceptance of the updated policy.</p></div>
+
+      <div class="item"><h3>12. Contact Us</h3><p>For questions about this policy, data requests, or privacy concerns, contact Hubbe Inc. at hubbeinc@gmail.com. We typically respond within 2 business days.</p></div>
+
+      <div class="contact">Questions? Contact us at <a href="mailto:hubbeinc@gmail.com">hubbeinc@gmail.com</a></div>
+    </section>
+
+    <!-- ============================ TERMS ============================ -->
+    <section class="doc" id="terms">
+      <h2>Terms of Service</h2>
+      <div class="updated">Last updated: June 7, 2026</div>
+
+      <div class="item"><h3>1. Welcome to Mochi Alarm</h3><p>By downloading or using Mochi Alarm ("the App"), you agree to these Terms of Service. The App is developed and operated by Hubbe Inc. (contact: hubbeinc@gmail.com). It is provided to help you wake up by completing a small movement-based mission for Mochi the cat. Please read these terms carefully — if you do not agree, do not use the App.</p></div>
+
+      <div class="item"><h3>2. Your Account &amp; Data</h3><p>Mochi Alarm does not require an account to function. Your alarms, settings, streak data, and virtual items (Biscuits, Coins) are stored locally on your device. We do not maintain servers that store personal data. You are responsible for keeping your device secure.</p></div>
+
+      <div class="item"><h3>3. In-App Purchases &amp; Premium</h3><p>Mochi Alarm offers an optional one-time "Premium" upgrade through Google Play In-App Billing. Premium removes ads and unlocks additional customization. All purchases are final and subject to Google Play's refund policy. We do not process payment information directly — all billing is handled by Google.</p></div>
+
+      <div class="item"><h3>4. Virtual Items</h3><p>The App includes virtual currency ("Coins") and consumable items ("Biscuits," "Catnip") earned through gameplay. These items have no real-world monetary value, cannot be transferred, exchanged, or redeemed for real money, and are non-refundable. Virtual items may be modified or discontinued at any time.</p></div>
+
+      <div class="item"><h3>5. Acceptable Use</h3><p>You agree to use the App for personal, non-commercial purposes only. You will not reverse engineer, decompile, redistribute, or attempt to extract source code. You will not use the App in any manner that could damage, disable, or impair it.</p></div>
+
+      <div class="item"><h3>6. Advertising</h3><p>The free version of the App displays ads served by Google AdMob. By using the free version, you consent to the display of these ads. Upgrading to Premium removes all ads. Ads are governed by Google's advertising policies.</p></div>
+
+      <div class="item"><h3>7. Health &amp; Safety</h3><p>The "Walk &amp; Pour" mission requires physical movement. Do not use the App while operating a vehicle, on stairs, or in any unsafe environment. Mochi Alarm is not a medical device and should not be relied upon for any safety-critical wake-ups (medication, transportation, etc.).</p></div>
+
+      <div class="item"><h3>8. Intellectual Property</h3><p>The App, including Mochi the cat character, sound design, and all artwork, is owned by Hubbe Inc. and protected by copyright. You may not reproduce, distribute, or create derivative works from any part of the App without written permission.</p></div>
+
+      <div class="item"><h3>9. Disclaimer of Warranties</h3><p>The App is provided "as is" without warranties of any kind. We do not guarantee that the App will be uninterrupted, error-free, or that any alarm will reliably ring at the configured time. Reliable alarm delivery also depends on device permissions and settings outside our control — including notification access, exact-alarm scheduling, lock-screen display, and excluding the App from battery optimization. If you decline these permissions, or if your device or manufacturer restricts background activity to save power (for example, "sleeping apps" or aggressive battery savers), alarms may be delayed or silent. Granting battery-unrestricted access is optional and entirely your choice. Use of the App for critical timing (medication, transportation, etc.) is at your own risk.</p></div>
+
+      <div class="item"><h3>10. Limitation of Liability</h3><p>To the maximum extent permitted by law, Hubbe Inc. is not liable for any damages arising from your use of, or inability to use, the App — including missed appointments, oversleeping, or loss of virtual items. Our total liability shall not exceed the amount you paid for the App.</p></div>
+
+      <div class="item"><h3>11. Changes to These Terms</h3><p>We may update these Terms occasionally. Continued use of the App after changes are posted constitutes acceptance of the new Terms. The "Last updated" date at the top reflects when this document was most recently revised.</p></div>
+
+      <div class="item"><h3>12. Governing Law &amp; Contact</h3><p>These Terms are governed by applicable laws. Disputes will be resolved through good-faith negotiation first. For questions, contact us at hubbeinc@gmail.com. We typically respond within 2 business days.</p></div>
+
+      <div class="contact">Questions? Contact us at <a href="mailto:hubbeinc@gmail.com">hubbeinc@gmail.com</a></div>
+    </section>
+
+    <footer>© 2026 Hubbe Inc. · Mochi Alarm</footer>
   </div>
-  <div class="meta">Senast uppdaterad: 30 maj 2026 &nbsp;·&nbsp; Hubbe Inc.</div>
-</header>
-
-<p>Denna integritetspolicy beskriver hur <strong>Hubbe Inc.</strong> hanterar information när du använder appen <strong>Mochi Alarm</strong> ("Appen") på Android. Genom att använda Appen godkänner du denna policy.</p>
-
-<h2>1. Vem vi är</h2>
-<p>Mochi Alarm är utvecklad och drivs av <strong>Hubbe Inc.</strong> Du kan kontakta oss via e-post: <a href="mailto:hubbeinc@gmail.com">hubbeinc@gmail.com</a>. Vi svarar normalt inom 2 arbetsdagar.</p>
-
-<h2>2. Data som lagras på din enhet</h2>
-<p>Mochi Alarm lagrar all din personliga information <strong>lokalt på din enhet</strong>. Vi driver inga servrar som samlar in eller lagrar dina uppgifter. Vi samlar <strong>inte</strong> in:</p>
-<ul>
-  <li>Ditt namn, e-postadress eller telefonnummer</li>
-  <li>Kontakter eller kalenderdata</li>
-  <li>Din exakta plats</li>
-  <li>Foton eller filer</li>
-</ul>
-<p>Följande data lagras <em>enbart lokalt</em> på din enhet:</p>
-<ul>
-  <li>Alarminställningar (tid, upprepning, ljud)</li>
-  <li>Appinställningar (mörkt läge, husdjursnamn)</li>
-  <li>Streak-räknare och väckningshistorik</li>
-  <li>Virtuella föremål (mynt, kex) från spelmekanik</li>
-</ul>
-
-<h2>3. Enhetssensorer</h2>
-<p>Appen använder enhetens <strong>accelerometer och gyroskop</strong> under "Walk &amp; Pour"-uppdraget för att känna av steg och lutning. Dessa data bearbetas helt lokalt i realtid och <strong>spelas aldrig in, laddas aldrig upp eller delas aldrig</strong> med någon.</p>
-
-<h2>4. Reklam – Google AdMob</h2>
-<div class="highlight">
-  Den kostnadsfria versionen av Mochi Alarm visar annonser via <strong>Google AdMob</strong> (Google LLC). Uppgradering till <strong>Mochi Alarm Premium</strong> tar bort alla annonser.
-</div>
-<p>För att visa annonser kan Google samla in och använda:</p>
-<ul>
-  <li>Ditt <strong>annons-ID</strong> (Google Advertising ID / GAID)</li>
-  <li>IP-adress och ungefärlig plats (land/region)</li>
-  <li>Enhetsinformation (modell, operativsystem)</li>
-  <li>Appanvändningsdata för annonsmålsättning</li>
-</ul>
-<p>Dessa data hanteras av Google och regleras av <a href="https://policies.google.com/privacy" target="_blank">Googles integritetspolicy</a>.</p>
-<p><strong>Så här stänger du av personanpassade annonser:</strong><br>
-Gå till Inställningar → Google → Annonser → "Ta bort annons-ID" eller "Välj bort annonspersonanpassning".</p>
-<p>Vi <strong>säljer inte</strong> din personliga information till tredje part.</p>
-
-<h2>5. Analys och kraschrapporter</h2>
-<p>Vi kan ta emot anonyma, aggregerade kraschrapporter och grundläggande användningsmått via Google Play-tjänster (t.ex. vilka skärmar som kraschar). Dessa data kan inte identifiera dig personligen. Du kan välja bort detta via Android-inställningar → Google → Hantera ditt Google-konto → Data &amp; sekretess.</p>
-
-<h2>6. Aviseringar</h2>
-<p>Med ditt tillstånd schemalägger Appen lokala alarmaviseringar på din enhet. Dessa aviseringar genereras helt på enheten och skickas <strong>aldrig</strong> via externa servrar.</p>
-
-<h2>7. Barns integritet</h2>
-<p>Mochi Alarm är avsedd för allmänna målgrupper (13 år och äldre) och riktar sig <strong>inte</strong> till barn under 13 år. Vi samlar inte medvetet in personuppgifter från barn. AdMob är konfigurerat för att visa icke-personanpassade annonser när det krävs enligt lag.</p>
-<p>Om du tror att ett barn under 13 år använder Appen, kontakta oss på <a href="mailto:hubbeinc@gmail.com">hubbeinc@gmail.com</a> så vidtar vi omedelbara åtgärder.</p>
-
-<h2>8. Datasäkerhetssammanfattning (Google Play)</h2>
-<ul>
-  <li><strong>Data som delas med tredje part:</strong> Annons-ID kan delas med Google AdMob för annonsvisning.</li>
-  <li><strong>Data vi samlar in:</strong> Ingen – all appdata stannar på din enhet.</li>
-  <li><strong>Säkerhetspraxis:</strong> Alla nätverksanslutningar (t.ex. annonsförfrågningar) använder HTTPS-kryptering.</li>
-  <li><strong>Databorttagning:</strong> Avinstallera Appen för att radera all lokal data. Ta bort ditt annons-ID i enhetsinställningarna för att återkalla AdMob-data.</li>
-</ul>
-
-<h2>9. Dina rättigheter</h2>
-<p>Du kan radera all appdata genom att avinstallera Appen. Utöver detta:</p>
-<ul>
-  <li><strong>EU/EES (GDPR):</strong> Du har rätt till tillgång, rättelse, radering och dataportabilitet. Kontakta oss på <a href="mailto:hubbeinc@gmail.com">hubbeinc@gmail.com</a> för att utöva dessa rättigheter.</li>
-  <li><strong>Kalifornien (CCPA):</strong> Vi säljer inte personlig information.</li>
-  <li><strong>Personanpassade annonser:</strong> Välj bort via Android-enhetsinställningar (se avsnitt 4).</li>
-</ul>
-
-<h2>10. Säkerhet</h2>
-<p>Vi använder branschstandardmetoder för att hålla Appen säker. Alla nätverksanslutningar använder HTTPS-kryptering. Inga personuppgifter lagras på våra servrar. Använd skärmlås på din enhet för extra skydd.</p>
-
-<h2>11. Ändringar av denna policy</h2>
-<p>Vi kan uppdatera denna integritetspolicy från tid till annan. Väsentliga ändringar kommuniceras med ett uppdaterat "Senast uppdaterad"-datum. Fortsatt användning av Appen efter att ändringar har publicerats innebär att du accepterar den uppdaterade policyn.</p>
-
-<h2>12. Kontakta oss</h2>
-<p>För frågor om denna policy, dataförfrågningar eller integritetsfrågor, kontakta:</p>
-<p><strong>Hubbe Inc.</strong><br>
-E-post: <a href="mailto:hubbeinc@gmail.com">hubbeinc@gmail.com</a><br>
-Vi svarar normalt inom 2 arbetsdagar.</p>
-
-<footer>
-  © 2026 Hubbe Inc. · Mochi Alarm · <a href="mailto:hubbeinc@gmail.com">hubbeinc@gmail.com</a>
-</footer>
-
 </body>
 </html>
